@@ -1,4 +1,4 @@
-module github.com/tangzhenqun/docker-utils
+module github.com/tangzhenquan/docker-utils
 
 go 1.14
 
