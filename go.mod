@@ -1,4 +1,4 @@
-module github.com/xplorfin/docker-utils
+module github.com/tangzhenqun/docker-utils
 
 go 1.14
 
