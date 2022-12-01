@@ -5,6 +5,7 @@ import (
 	"context"
 	"io/ioutil"
 	"os"
+	"fmt"
 
 	"github.com/docker/docker/api/types"
 	"github.com/docker/docker/api/types/container"
@@ -23,6 +24,10 @@ type ExecResult struct {
 	StdErr string
 	// ExitCode of the process. See https://tldp.org/LDP/abs/html/exitcodes.html for details
 	ExitCode int
+}
+
+func (er *ExecResult) String(){
+	return fmt.Sprintf("%s%s", er.StdOut, er.StdErr)	
 }
 
 // InspectExecResp copies container execution results into an ExecResult
