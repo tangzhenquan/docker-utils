@@ -26,7 +26,7 @@ type ExecResult struct {
 	ExitCode int
 }
 
-func (er *ExecResult) String(){
+func (er *ExecResult) String() string{
 	return fmt.Sprintf("%s%s", er.StdOut, er.StdErr)	
 }
 
